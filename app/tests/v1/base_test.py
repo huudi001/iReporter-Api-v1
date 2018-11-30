@@ -12,7 +12,7 @@ class BaseTest(unittest.TestCase):
         self.client = self.app.test_client()
 
         self.incident = {
-            "created_on":datetime.datetime.now(),
+            "created_on":"12-3-2018",
             "created_by":"khalid Hashi",
             "type":"corruption",
             "location":"1.291', 36.8219",
