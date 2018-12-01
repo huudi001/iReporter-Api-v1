@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/huudi001/iReporter-Api-v1.svg?branch=ch-tests)](https://travis-ci.org/huudi001/iReporter-Api-v1)
-
+[![Coverage Status](https://coveralls.io/repos/github/huudi001/iReporter-Api-v1/badge.svg?branch=master)](https://coveralls.io/github/huudi001/iReporter-Api-v1?branch=master)
 
 # iReporter-API
 
