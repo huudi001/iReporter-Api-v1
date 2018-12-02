@@ -62,7 +62,7 @@ class Getsingleincident(Resource):
             response = jsonify({'message':'not allowed'})
             return response
 
-        return jsonify({'response':'incident Not Available'})
+        return jsonify({'response':'Incident Not Available'})
 
 class Deleteincident(Resource):
     ''' delete a single incident '''
@@ -85,14 +85,14 @@ class Deleteincident(Resource):
             response = jsonify({'message':'not allowed'})
             return response
 
-        return jsonify({'response':'incident Not Available'})
+        return jsonify({'response':'Incident Not Available'})
 
 class Updateincident(Resource):
     ''' delete a single incident '''
 
     def put(self, incidentId, new_created_on,new_created_by,new_type,new_location, new_status,new_images, new_videos, new_comment):
 
-        """Delete a single incident record
+        """update a single incident record
             param:
             <int:incidentId>
         """
@@ -109,11 +109,11 @@ class Updateincident(Resource):
                     incident["images"] = new_images
                     incident["videos"] = new_videos
                     incident["comment"] = new_comment
-                    response = jsonify({' = message':'incident successfully deleted'})
+                    response = jsonify({' = message':'incident successfully updated'})
                     return response
         except ValueError:
             print('not string')
             response = jsonify({'message':'not allowed'})
             return response
 
-        return jsonify({'response':'incident Not Available'})
+        return jsonify({'response':'Incident Not Available'})
