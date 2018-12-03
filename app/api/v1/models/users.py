@@ -7,7 +7,7 @@ class User():
         "user_id": user_id,
         "first_name": first_name,
         "last_name":  last_name,
-        "other_names": other_names,
+        "other_names": other_names, 
         "email": email,
         "phone_number":  phone_number,
         "user_name": user_name,

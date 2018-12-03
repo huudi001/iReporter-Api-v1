@@ -6,7 +6,7 @@ from app.api.v1.models.users import User, users
 
 email_format = r"(^[a-zA-z0-9_.]+@[a-zA-z0-9-]+\.[a-z]+$)"
 
-
+  
 user = User()
 
 class Login(Resource, User):
