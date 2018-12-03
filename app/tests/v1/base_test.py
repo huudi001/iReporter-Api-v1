@@ -4,10 +4,10 @@ from app import create_app
 import datetime
 
 
-class BaseTest(unittest.TestCase):
+class BaseTest(unittest.TestCase): 
 
     def setUp(self):
-        self.app = create_app() 
+        self.app = create_app()
         self.app.testing = True
         self.client = self.app.test_client()
 
