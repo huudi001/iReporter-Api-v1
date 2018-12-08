@@ -19,7 +19,7 @@ class Incidents(Resource):
 
     def post(self):
         """post an incident to list
-            return : json single incident confirmation
+            return : json single incident confirmation 
         """
 
         data = request.get_json()
@@ -79,37 +79,6 @@ class Deleteincident(Resource):
                 if incident['incidentId'] == int(incidentId):
                     incidents.remove(incident)
                     response = jsonify({'message':'incident successfully deleted'})
-                    return response
-        except ValueError:
-            print('not string')
-            response = jsonify({'message':'not allowed'})
-            return response
-
-        return jsonify({'response':'Incident Not Available'})
-
-class Updateincident(Resource):
-    ''' delete a single incident '''
-
-    def put(self, incidentId, new_created_on,new_created_by,new_type,new_location, new_status,new_images, new_videos, new_comment):
-
-        """update a single incident record
-            param:
-            <int:incidentId>
-        """
-        try:
-            isinstance(int(incidentId), int)
-            print('string')
-            for incident in incidents:
-                if incident['incidentId'] == int(incidentId):
-                    incident["created_on"] = new_created_on
-                    incident["created_on"] = new_created_by
-                    incident["type"] = new_type
-                    incident["location"] = new_location
-                    incident["status"] = new_status
-                    incident["images"] = new_images
-                    incident["videos"] = new_videos
-                    incident["comment"] = new_comment
-                    response = jsonify({' = message':'incident successfully updated'})
                     return response
         except ValueError:
             print('not string')

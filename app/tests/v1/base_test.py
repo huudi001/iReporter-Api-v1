@@ -17,8 +17,8 @@ class BaseTest(unittest.TestCase):
             "type":"corruption",
             "location":"1.291', 36.8219",
             "status": "pending",
-            "images": [],
-            "videos": [],
+            "images": "images",
+            "videos": "videos",
             "comment": "comment"
 
         }

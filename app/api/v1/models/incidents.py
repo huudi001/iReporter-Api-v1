@@ -3,6 +3,8 @@ incidents = []
 class IncidentsData():
    def save_incident(self, created_on ,created_by, type, location , status, images, videos, comment):
        incidentId = len(incidents)+1
+       images = []
+       videos = []
 
        user_incidents = {
            "incidentId":incidentId,
@@ -11,8 +13,8 @@ class IncidentsData():
            "type":type,
            "location":location,
            "status":status,
-           "images":[],
-           "videos":[],
+           "images":images,
+           "videos":videos,
            "comment":comment
         }
        incidents.append(user_incidents)
